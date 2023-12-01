@@ -3,9 +3,8 @@ const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb
 const cities = [];
 
 fetch(endpoint)
-                .then(blob=>blob.json())
-                .then(data=>cities.push(...data))
-
+    .then(blob=>blob.json())
+    .then(data=>cities.push(...data))
 
 function findMatches(wordToMatch, cities){
     return cities.filter(place=>{
