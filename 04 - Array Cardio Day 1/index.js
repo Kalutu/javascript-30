@@ -33,13 +33,13 @@
 
       // Array.prototype.map()
       // 2. Give us an array of the inventors first and last names
-      const Fullnames = inventors.map(inventor => inventor.first +" "+ inventor.last);
-      console.table(Fullnames);
+      const fullNames = inventors.map(inventor => inventor.first +" "+ inventor.last);
+      console.log(fullNames);
   
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
-      const sorted = inventors.sort((a,b)=>a.year>b.year? 1: -1);
-      console.table(sorted);
+      const ordered = inventors.sort((a,b)=>a.year>b.year? 1: -1);
+      console.table(ordered);
   
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
@@ -51,31 +51,31 @@
   
       // 5. Sort the inventors by years lived
       const oldest = inventors.sort((a,b)=>{
-        let lastguy = a.passed - a.year;
-        let nextguy = b.passed - b.year;
+        let lastGuy = a.passed - a.year;
+        let nextGuy = b.passed - b.year;
 
-        return lastguy > nextguy ? -1 : 1;
+        return lastGuy > nextGuy ? -1 : 1;
       })
       console.table(oldest);
   
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-      // const category = document.querySelector('.mw-category');
-      // const links = Array.from(category.querySelectorAll('a'));
+      const category = document.querySelector('.mw-category');
+      const links = Array.from(category.querySelectorAll('a'));
 
-      // const de = links
-      //                 .map(link=>link.textCotent)
-      //                 .filter(streetName=>streetName.includes('de'));
+      const de = links
+                    .map(link=>link.textCotent)
+                    .filter(streetName=>streetName.includes('de'));
   
       // 7. sort Exercise
       // Sort the people alphabetically by last name
-      const alphabetically = people.sort((a,b)=>{
+      const alpha = people.sort((a,b)=>{
         const [aLast, aFirst] = a.split(', ');
         const [bLast, bFirst] = b.split(', ');
         return aLast > bLast ? 1 : -1;
       })
-      console.table(alphabetically);
+      console.table(alpha);
 
   
       // 8. Reduce Exercise
@@ -91,4 +91,3 @@
       },{})
 
       console.table(transportation);
-  
