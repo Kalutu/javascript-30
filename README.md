@@ -1,4 +1,4 @@
-# JavaScript30 Challenge
+# JavaScript 30
 Welcome to my 30-day Vanilla JavaScript coding challenge! This project is a result of my participation in the JavaScript30 challenge by Wes Bos, where I aim to build 30 different projects using only pure Vanilla JavaScript without the use of frameworks, compilers, libraries, or boilerplate code.
 
 
