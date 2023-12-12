@@ -10,10 +10,10 @@ function toggleActive(e){
     }
 }
 
-panels.forEach(panel=>{
+panels.forEach(panel => {
     panel.addEventListener('click',toggleOpen);
 });
 
-panels.forEach(panel=>{
+panels.forEach(panel => {
     panel.addEventListener('transitionend',toggleActive);
 });
