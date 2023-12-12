@@ -5,7 +5,7 @@ function handleUpdate(){
     document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix);
 }
 
-inputs.forEach(input=>{
+inputs.forEach(input => {
     input.addEventListener('change', handleUpdate);
     input.addEventListener('mousemove', handleUpdate);
 })
